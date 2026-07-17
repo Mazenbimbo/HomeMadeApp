@@ -1,0 +1,14 @@
+/home/mazen/csharp_projects/bin/Debug/net8.0/csharp_projects
+/home/mazen/csharp_projects/bin/Debug/net8.0/csharp_projects.deps.json
+/home/mazen/csharp_projects/bin/Debug/net8.0/csharp_projects.runtimeconfig.json
+/home/mazen/csharp_projects/bin/Debug/net8.0/csharp_projects.dll
+/home/mazen/csharp_projects/bin/Debug/net8.0/csharp_projects.pdb
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.GeneratedMSBuildEditorConfig.editorconfig
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.AssemblyInfoInputs.cache
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.AssemblyInfo.cs
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.csproj.CoreCompileInputs.cache
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.dll
+/home/mazen/csharp_projects/obj/Debug/net8.0/refint/csharp_projects.dll
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.pdb
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.genruntimeconfig.cache
+/home/mazen/csharp_projects/obj/Debug/net8.0/ref/csharp_projects.dll

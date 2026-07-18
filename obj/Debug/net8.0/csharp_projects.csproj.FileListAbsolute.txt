@@ -12,3 +12,4 @@
 /home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.pdb
 /home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.genruntimeconfig.cache
 /home/mazen/csharp_projects/obj/Debug/net8.0/ref/csharp_projects.dll
+/home/mazen/csharp_projects/obj/Debug/net8.0/csharp_projects.sourcelink.json

@@ -1,0 +1,14 @@
+@HomeMadeApp_HostAddress = http://localhost:5230
+
+GET {{HomeMadeApp_HostAddress}}/user/1
+Accept: application/json
+
+POST {{HomeMadeApp_HostAddress}}/user
+Accept: application/json
+
+{
+    "Name" : "Mazen",
+    "Role" : "Admin"
+}
+###
+

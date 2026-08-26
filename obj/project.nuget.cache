@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Hteto5wf5l4wPo9DutRMR1sDwvJ37pRE/wMKnlqDUtPevROdwGNMjDR1US/QCEsPUxJYPr2wbh7QbjKbbVY1yA==",
+  "dgSpecHash": "LHNBFLVlvL8=",
   "success": true,
-  "projectFilePath": "/home/mazen/csharp_projects/csharp_projects.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/mazen/HomeMadeApp/csharp_projects.csproj",
+  "expectedPackageFiles": [
+    "/home/mazen/.nuget/packages/microsoft.netcore.app.ref/8.0.30/microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "/home/mazen/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.30/microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512",
+    "/home/mazen/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.30/microsoft.netcore.app.host.linux-x64.8.0.30.nupkg.sha512"
+  ],
   "logs": []
 }

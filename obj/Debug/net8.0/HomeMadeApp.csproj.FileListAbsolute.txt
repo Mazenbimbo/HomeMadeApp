@@ -31,3 +31,5 @@
 /home/mazen/HomeMadeApp/obj/Debug/net8.0/HomeMadeApp.pdb
 /home/mazen/HomeMadeApp/obj/Debug/net8.0/HomeMadeApp.genruntimeconfig.cache
 /home/mazen/HomeMadeApp/obj/Debug/net8.0/ref/HomeMadeApp.dll
+/home/mazen/HomeMadeApp/obj/Debug/net8.0/rpswa.dswa.cache.json
+/home/mazen/HomeMadeApp/obj/Debug/net8.0/HomeMadeApp.sourcelink.json

@@ -1,14 +1,22 @@
 @HomeMadeApp_HostAddress = http://localhost:5230
 
-GET {{HomeMadeApp_HostAddress}}/user/1
-Accept: application/json
+# GET {{HomeMadeApp_HostAddress}}/user/1
+# Accept: application/json
 
-POST {{HomeMadeApp_HostAddress}}/user
+# POST {{HomeMadeApp_HostAddress}}/user
+# Accept: application/json
+
+# {
+#     "Name" : "Mazen",
+#     "Role" : "Admin"
+# }
+
+POST {{HomeMadeApp_HostAddress}}/api/product
 Accept: application/json
 
 {
-    "Name" : "Mazen",
-    "Role" : "Admin"
+    "Name" : "Pen",
+    "Price" : 120.5
 }
 ###
 

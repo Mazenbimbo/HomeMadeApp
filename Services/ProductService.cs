@@ -26,4 +26,10 @@ public class ProductService
         return product;
         
     }
+    public List<Product> AllProducts()
+    {
+        var products = db.Products.ToList();
+
+        return products;
+    }
 }

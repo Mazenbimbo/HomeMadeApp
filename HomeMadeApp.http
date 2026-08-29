@@ -11,12 +11,16 @@
 #     "Role" : "Admin"
 # }
 
-POST {{HomeMadeApp_HostAddress}}/api/product
-Accept: application/json
+# POST {{HomeMadeApp_HostAddress}}/api/product
+# Content-Type: application/json
+# Accept: application/json
 
-{
-    "Name" : "Pen",
-    "Price" : 120.5
-}
+# {
+#     "Name" : "Apple",
+#     "Price" : 0.5
+# }
+
+GET {{HomeMadeApp_HostAddress}}/api/product/all
+Accept: application/json
 ###
 

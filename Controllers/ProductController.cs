@@ -13,6 +13,12 @@ public class ProductController : ControllerBase
     public IActionResult CreateProduct(CreateProductDto dto)
     {
         var p = productService.CreateProduct(dto); 
-        return Ok("Created");
+        return Ok(p);
+    }
+    [HttpGet("all")]
+    public IActionResult AllProducts()
+    { 
+        var products = productService.AllProducts();
+        return Ok(products);
     }
 }

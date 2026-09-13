@@ -1,0 +1,1 @@
+public record LoginCreds(string email, string password);

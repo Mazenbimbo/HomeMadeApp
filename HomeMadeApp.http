@@ -23,14 +23,14 @@
 # GET {{HomeMadeApp_HostAddress}}/api/product/all
 # Accept: application/json
 
-POST {{HomeMadeApp_HostAddress}}/auth/login
-Content-Type: application/json
-Accept: application/json
+# POST {{HomeMadeApp_HostAddress}}/auth/login
+# Content-Type: application/json
+# Accept: application/json
 
-{
-    "Email" : "mazen@gmail.com",
-    "Password" : "xxx"
-}
+# {
+#     "Email" : "mazen@gmail.com",
+#     "Password" : "xxx"
+# }
 
 # POST {{HomeMadeApp_HostAddress}}/auth/register
 # Content-Type: application/json
@@ -39,7 +39,22 @@ Accept: application/json
 # {
 #     "Name" : "Mazen",
 #     "Email" : "mazen@gmail.com",
+#     "City" : "Giza",
 #     "Password" : "xxx"
+# }
+
+POST {{HomeMadeApp_HostAddress}}/api/product
+Content-Type: application/json
+Accept: application/json
+
+{
+    "Name" : "Pull-up bar",
+    "Description" : "Pull-up bar for the wall to train at home",
+    "Price" : 500,
+    "Category" : "Fitness",
+    "SellerId" : 1
+
 }
+
 ###
 

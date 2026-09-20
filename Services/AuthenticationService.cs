@@ -20,7 +20,7 @@ public class AuthenticationService
             new Claim("Role",role.ToString())
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("my own password"));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("my own password is secure enough"));
 
         var credentials = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
 
@@ -49,6 +49,7 @@ public class AuthenticationService
             Name = user.Name,
             Email = user.Email,
             Password = user.Password,
+            City = user.City,
             Role = User.roles.Customer
         };
 

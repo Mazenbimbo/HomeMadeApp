@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 public class Seller
 {
     [Key]
-    public int ID {get;set;}
+    public int Id {get;set;}
     [Required]
     public string Name {get;set;} = string.Empty;
     public string? Image {get;set;}

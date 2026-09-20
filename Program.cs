@@ -15,6 +15,7 @@ builder.Services.AddScoped<IEngine,FuelEngine>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=data.db"));
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
 {

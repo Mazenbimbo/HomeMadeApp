@@ -10,9 +10,9 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateProduct(CreateProductDto dto)
+    public IActionResult CreateProduct(Product product)
     {
-        var p = productService.CreateProduct(dto); 
+        var p = productService.CreateProduct(product); 
         return Ok(p);
     }
     [HttpGet("all")]

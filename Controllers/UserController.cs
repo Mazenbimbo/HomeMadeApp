@@ -20,7 +20,7 @@ public class UserController: ControllerBase
         var MyData = db.Users.Find(id);
 
         //make a dto to hide sensitive user data 
-        
+        // testing github
         return Ok(MyData); 
     }
     

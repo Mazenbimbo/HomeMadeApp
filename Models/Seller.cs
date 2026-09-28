@@ -19,5 +19,5 @@ public class Seller
     [Range(1,5)]
     public string? Rating {get;set;}
     public int? NumberOfProductsSold {get;set;}
-    public List<Product> Products {get;set;} = new();
+    public List<Product>? Products {get;set;} = new();
 }

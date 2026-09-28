@@ -56,4 +56,6 @@ public class AuthenticationService
         db.Users.Add(u);
         db.SaveChanges();
     }
+
+    
 }

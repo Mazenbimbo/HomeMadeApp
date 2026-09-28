@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <div class="container" id="container" style="background-color: green;">
+        <script>
+            function print_products(){
+                    let products = "";
+
+                    let products_names = ["Cake","Apples","Oranges"];
+                    for(let i=0;i<3;i++){
+                    products += `<div id="product${i+1}" style="background-color: gray;">
+                        <img src="x" alt="product ${i+1}">
+                        <h1 id="name${i+1}"> ${products_names[i]} </h1>
+                        <p id="description${i+1}">Some description about the prodcut </p>
+                    </div>`;
+                }
+
+                document.getElementById("container").innerHTML += products;
+            }
+
+            print_products();
+        </script>
+    </div>
+</body>
+</html>
+

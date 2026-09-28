@@ -1,38 +1,34 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("/user")]
 public class UserController: ControllerBase
 {
-    List<User> users = new();
 
-    [HttpGet]
-    [Route("{ID}")]
-    public IActionResult GetUser(int ID)
+    public readonly AppDbContext db; 
+    public UserController(AppDbContext db)
     {
-        try
-        {
-            return Ok($"User with ID : {ID}");
-        }
-        catch(Exception e)
-        {
-            return Ok(e);
-        }
+        this.db = db;
+    }
+    [HttpGet]
+    [Authorize]
+    public IActionResult MyAccount(HttpContext context)
+    {
+        var claims = context.User.Claims;
+        var id = claims.FirstOrDefault(n => n.Type == "sub")?.Value; // understand this better 
+        var MyData = db.Users.Find(id);
+
+        //make a dto to hide sensitive user data 
         
+        return Ok(MyData); 
     }
-
-    [HttpGet]
-    [Route("habit")]
-    public IActionResult DoHabit(DoHabits habit)
-    {
-        return Ok(habit.pray);
-    }
-
+    
     [HttpPost]
-    public IActionResult AddUser(User user)
+    [Authorize]
+    public IActionResult EditUserInfo()
     {
-        users.Add(user);
-        return Ok("Created Successfully!");
+        return Ok();
     }
 
 

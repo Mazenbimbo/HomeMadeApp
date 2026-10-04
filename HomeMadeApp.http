@@ -1,51 +1,63 @@
 @HomeMadeApp_HostAddress = http://localhost:5230
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiTmFtZSI6Ik1hemVuIiwiUm9sZSI6IkN1c3RvbWVyIiwiZXhwIjoxNzkxNjM1NzMwLCJpc3MiOiJNYXplbidzIFNlcnZlciIsImF1ZCI6Ik1hemVuJ3Mgd2Vic2l0ZSB2aXNpdGVycyJ9.JtPyY5_i2lyNGWu7IRpoMl92tFrWMAkbyxDqbdqQElg
 
-# GET {{HomeMadeApp_HostAddress}}/user/1
-# Accept: application/json
+GET {{HomeMadeApp_HostAddress}}/user/1
+Accept: application/json
 
-# POST {{HomeMadeApp_HostAddress}}/user
-# Accept: application/json
+###
 
-# {
-#     "Name" : "Mazen",
-#     "Role" : "Admin"
-# }
+POST {{HomeMadeApp_HostAddress}}/user
+Accept: application/json
 
-# POST {{HomeMadeApp_HostAddress}}/api/product
-# Content-Type: application/json
-# Accept: application/json
+{
+    "Name" : "Mazen",
+    "Role" : "Admin"
+}
 
-# {
-#     "Name" : "Apple",
-#     "Price" : 0.5
-# }
-
-# GET {{HomeMadeApp_HostAddress}}/api/product/all
-# Accept: application/json
-
-# POST {{HomeMadeApp_HostAddress}}/auth/login
-# Content-Type: application/json
-# Accept: application/json
-
-# {
-#     "Email" : "mazen@gmail.com",
-#     "Password" : "xxx"
-# }
-
-# POST {{HomeMadeApp_HostAddress}}/auth/register
-# Content-Type: application/json
-# Accept: application/json
-
-# {
-#     "Name" : "Mazen",
-#     "Email" : "mazen@gmail.com",
-#     "City" : "Giza",
-#     "Password" : "xxx"
-# }
+###
 
 POST {{HomeMadeApp_HostAddress}}/api/product
 Content-Type: application/json
 Accept: application/json
+
+{
+    "Name" : "Apple",
+    "Price" : 0.5
+}
+
+###
+
+GET {{HomeMadeApp_HostAddress}}/api/product/all
+Accept: application/json
+
+###
+
+POST {{HomeMadeApp_HostAddress}}/auth/login
+Content-Type: application/json
+Accept: application/json
+    "Email" : "mazen@gmail.com",
+    "Password" : "xxx"
+}
+
+###
+
+POST {{HomeMadeApp_HostAddress}}/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "Name" : "Mazen",
+    "Email" : "mazen@gmail.com",
+    "City" : "Giza",
+    "Password" : "xxx"
+}
+
+###
+
+POST {{HomeMadeApp_HostAddress}}/api/product
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
 
 {
     "Name" : "Pull-up bar",

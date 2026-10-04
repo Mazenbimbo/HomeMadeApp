@@ -39,10 +39,15 @@ public class AuthenticationService
         return jwt;
     }
 
-    public void Register(User user)
+    public string Register(User user)
     {
 
         // check if it already exists 
+
+        // if (db.Users.Find(user.ID) != null )
+        // {
+        //     return "User Already Exist!";
+        // }
 
         var u = new User
         {
@@ -55,6 +60,7 @@ public class AuthenticationService
 
         db.Users.Add(u);
         db.SaveChanges();
+        return "User Created Successfully!";
     }
 
     

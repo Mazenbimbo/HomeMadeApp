@@ -15,6 +15,7 @@ public class Product
     public string Category {get;set;} = string.Empty;
     [Range(1,5)]
     public int? Rating {get;set;}
+    public int? Amount {set;get;}
     public int SellerId {get;set;}
     public Seller? Seller {get;set;} // this is navigation proprety to allow access like this -> Product.Seller.Name
     // public List<Review> Reviews {get;set;}

@@ -14,6 +14,7 @@ builder.Services.AddScoped<DoHabits>();
 builder.Services.AddScoped<IEngine,FuelEngine>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<AuthenticationService>();
+builder.Services.AddScoped<CartService>();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=data.db"));
 builder.Services.AddHttpContextAccessor();
 

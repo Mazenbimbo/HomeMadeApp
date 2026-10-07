@@ -27,7 +27,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 
    ValidIssuer = "Mazen's Server",
    ValidAudience = "Mazen's website visiters",
-   IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("my own password"))
+   IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("my own password is secure enough"))
    
 });
 builder.Services.AddAuthorization();

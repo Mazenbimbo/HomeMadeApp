@@ -1,5 +1,5 @@
 @HomeMadeApp_HostAddress = http://localhost:5230
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiTmFtZSI6Ik1hemVuIiwiUm9sZSI6IkN1c3RvbWVyIiwiZXhwIjoxNzkxNjM1NzMwLCJpc3MiOiJNYXplbidzIFNlcnZlciIsImF1ZCI6Ik1hemVuJ3Mgd2Vic2l0ZSB2aXNpdGVycyJ9.JtPyY5_i2lyNGWu7IRpoMl92tFrWMAkbyxDqbdqQElg
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiTmFtZSI6Ik1hemVuIiwiUm9sZSI6IkN1c3RvbWVyIiwiZXhwIjoxNzkxODk1MjAwLCJpc3MiOiJNYXplbidzIFNlcnZlciIsImF1ZCI6Ik1hemVuJ3Mgd2Vic2l0ZSB2aXNpdGVycyJ9.Q1U34ieyQFC4yberD85ztdtAJOPETwo6vco9oGrnZFs
 
 GET {{HomeMadeApp_HostAddress}}/user/1
 Accept: application/json
@@ -35,8 +35,10 @@ Accept: application/json
 POST {{HomeMadeApp_HostAddress}}/auth/login
 Content-Type: application/json
 Accept: application/json
-    "Email" : "mazen@gmail.com",
-    "Password" : "xxx"
+
+{
+    "email" : "mazen@gmail.com",
+    "password" : "xxx"
 }
 
 ###
